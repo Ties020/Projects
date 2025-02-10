@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+    // Jackson Databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    // Jackson Core
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
+    // JLayer for MP3 playback
+    implementation 'javazoom:jlayer:1.0.1'
+    
+    //Json
+    implementation 'org.json:json:20210307'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'nl.vu.cs.softwaredesign.UserInterface.StartScreen'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('') // Adds a classifier to the JAR's name
+    manifest {
+        attributes 'Main-Class': 'nl.vu.cs.softwaredesign.UserInterface.StartScreen'
+    }
+    // Optionally exclude files from the JAR
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.MF'
+}
+build.dependsOn shadowJar
