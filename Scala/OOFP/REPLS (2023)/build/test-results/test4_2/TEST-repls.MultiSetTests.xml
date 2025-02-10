@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repls.MultiSetTests" tests="22" skipped="0" failures="0" errors="0" timestamp="2023-10-19T16:16:50" hostname="fedora" time="0.036">
+  <properties/>
+  <testcase name="MultiSets can represent the empty Set" classname="repls.MultiSetTests" time="0.004"/>
+  <testcase name="Simple multiset character" classname="repls.MultiSetTests" time="0.002"/>
+  <testcase name="Simple multiset string" classname="repls.MultiSetTests" time="0.0"/>
+  <testcase name="Simple multiset Int" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Simple multiset double" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Multiple elements" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Same elements" classname="repls.MultiSetTests" time="0.0"/>
+  <testcase name="Different and same elements" classname="repls.MultiSetTests" time="0.0"/>
+  <testcase name="Sum of multiset with empty set" classname="repls.MultiSetTests" time="0.006"/>
+  <testcase name="Sum of two multisets" classname="repls.MultiSetTests" time="0.004"/>
+  <testcase name="Sum of three multisets" classname="repls.MultiSetTests" time="0.002"/>
+  <testcase name="Difference of a multiset with empty set" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Difference of two multisets" classname="repls.MultiSetTests" time="0.0"/>
+  <testcase name="Difference of three multisets" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Intersection with empty set" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Intersection of two multisets" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Intersection of tree multisets" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Multiset expressions numeric" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Multiset expression characters" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Large Multiset 1" classname="repls.MultiSetTests" time="0.002"/>
+  <testcase name="Large Multiset 2" classname="repls.MultiSetTests" time="0.001"/>
+  <testcase name="Large Multiset 3" classname="repls.MultiSetTests" time="0.001"/>
+  <system-out><![CDATA[(Doing,Map(),+,Map(a -> 1))
+(Doing,Map(1.0 -> 1, 1.2 -> 1, 2.0 -> 1),+,Map(1.0 -> 1, 1.2 -> 1, 2.2 -> 1, 4.0 -> 1))
+(Doing,Map(1 -> 1, 2 -> 1),+,Map(2 -> 1, 4 -> 1, 5 -> 1))
+(Doing,Map(1 -> 1, 2 -> 2, 4 -> 1, 5 -> 1),+,Map(3 -> 1, 5 -> 1))
+(Doing,Map(hello -> 2147483647, bla -> 1073741823),+,Map(bye -> 2147483647))
+(Doing,Map(bla -> 1073741823),+,Map(hello -> 2147483647, zozo -> 2147483647, bla -> 100000))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
