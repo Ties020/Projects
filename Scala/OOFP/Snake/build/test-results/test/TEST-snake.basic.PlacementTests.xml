@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="snake.basic.PlacementTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-24T09:28:58" hostname="fedora" time="0.054">
+  <properties/>
+  <testcase name="testStartCorrectly" classname="snake.basic.PlacementTests" time="0.042"/>
+  <testcase name="testApplePos3" classname="snake.basic.PlacementTests" time="0.002"/>
+  <testcase name="testApplePos8" classname="snake.basic.PlacementTests" time="0.002"/>
+  <testcase name="testNoRoomForApple" classname="snake.basic.PlacementTests" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

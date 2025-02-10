@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="snake.basic.GrowthTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-24T09:28:58" hostname="fedora" time="0.009">
+  <properties/>
+  <testcase name="testGrow" classname="snake.basic.GrowthTests" time="0.004"/>
+  <testcase name="testGrowTwice" classname="snake.basic.GrowthTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
