@@ -1,0 +1,47 @@
+
+Exercise 1:
+
+C) 
+Are the two events that a person has cancer and that the test is positive dependent? 
+Two events are independent when P(A \cap B) = P(A) \cdot P(B) where P(B) = P(B|A). In this case: P(the test result is positive \cap person has cancer) = P(the test result is positive) \cdot  P(person has cancer).
+To be independent, P(person has cancer) should be equal to P(person has cancer | the test result is positive). We know that P(person has cancer) = 0.004. 
+Moreover, we calculated in 1b that P(person has cancer | the test result was positive) = 0.071. In conclusion, the events that a person has cancer and that the test is positive are dependent since P(person has cancer) is
+not equal to P(person has cancer | the test result is positive). 
+
+Does the fact that a test result was positive increase the risk of having cancer, when compared to the probability that a random
+individual from the population has cancer?
+Yes the fact that a test result was positive increases the risk of having cancer because the probability of a random individual having cancer is 0.004.
+On the other hand, the possibility of having cancer when the test result is positive is a higher 0.071 as calculated in 1b. 
+
+
+Exercise 3:
+b) 1:
+b) 2:
+c) 2: 
+
+Obviously this data set is not from a normal distribution. When looking at the histogram, we can conclude that it is right-skewed. If it were to come from a normal distribution, the histogram would be way 
+more symmetrical. The QQ-plot shows this same distinction from a normal distribution since it is not a straight diagonal line. The boxplot looks less extreme than the other two graphical representations since the box is not quite in the middle of the min and max value, but just slightly. If it were in the middle, it could have made an argument for being from a normal distribution, however given the fact not it is not plus the other two representations not looking like a normal distribution at all, disputes this claim. 
+
+Exercise 4:
+a) 
+\textbf{Code:}
+source("function02.txt");
+absdiff = numeric(1000)
+for(i in 1:1000){
+	absdiff[i] = mean(diffdice(i));
+}
+second = 1.9444;
+
+plot(absdiff, type = "o", cex = 0, xlab = "Number of trials");
+abline(1.9444,0, col = "red");
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{"../Pictures/Screenshots/Screenshot from 2023-11-08 16-25-28"}
+	\caption{}
+	\label{fig:screenshot-from-2023-11-08-16-25-28}
+\end{figure}
+
+
+
+

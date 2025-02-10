@@ -1,0 +1,7 @@
+vA = c(scan("sampleA.txt"))
+mean_valueA <- mean(vA)
+median_valueA <- median(vA)
+sd_valueA <- sd(vA)
+quantilesA <- quantile(vA)
+maxvalA <- max(vA)
+minvalA <- min(vA)
