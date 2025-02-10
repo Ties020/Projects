@@ -1,0 +1,6 @@
+core.editor=code --wait
+core.autocrlf=input
+user.name=Ties
+user.mail=tiesschasfoort@gmail.com
+user.email=tiesschasfoort@gmail.com
+init.defaultbranch=main
