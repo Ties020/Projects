@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="warmup.IndexOfMaxTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-10T10:16:15" hostname="fedora" time="0.032">
+  <properties/>
+  <testcase name="max0" classname="warmup.IndexOfMaxTests" time="0.024"/>
+  <testcase name="max1" classname="warmup.IndexOfMaxTests" time="0.002"/>
+  <testcase name="max2" classname="warmup.IndexOfMaxTests" time="0.0"/>
+  <testcase name="max3" classname="warmup.IndexOfMaxTests" time="0.001"/>
+  <testcase name="max4" classname="warmup.IndexOfMaxTests" time="0.001"/>
+  <testcase name="max5" classname="warmup.IndexOfMaxTests" time="0.0"/>
+  <testcase name="max6" classname="warmup.IndexOfMaxTests" time="0.0"/>
+  <testcase name="max7" classname="warmup.IndexOfMaxTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

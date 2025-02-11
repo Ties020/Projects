@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="warmup.MergeSortTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-09-10T10:16:15" hostname="fedora" time="0.002">
+  <properties/>
+  <testcase name="mergesort0" classname="warmup.MergeSortTests" time="0.0"/>
+  <testcase name="mergesort1" classname="warmup.MergeSortTests" time="0.0"/>
+  <testcase name="mergesort2" classname="warmup.MergeSortTests" time="0.0"/>
+  <system-out><![CDATA[You got 42/42 points!
+Your base grade for exercise 1 will be : 7.00
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

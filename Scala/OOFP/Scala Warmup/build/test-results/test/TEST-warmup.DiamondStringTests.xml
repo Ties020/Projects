@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="warmup.DiamondStringTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-10T10:16:15" hostname="fedora" time="0.013">
+  <properties/>
+  <testcase name="diamond3" classname="warmup.DiamondStringTests" time="0.003"/>
+  <testcase name="diamond4" classname="warmup.DiamondStringTests" time="0.001"/>
+  <testcase name="diamond7" classname="warmup.DiamondStringTests" time="0.001"/>
+  <testcase name="diamond12" classname="warmup.DiamondStringTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

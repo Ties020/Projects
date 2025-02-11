@@ -1,0 +1,83 @@
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
+
+plugins {
+    id 'scala'
+    id 'idea'
+}
+
+
+test {
+    useJUnitPlatform()
+    exclude "**/TestMaster.class"
+    afterSuite { suite, result ->
+        result.exception?.printStackTrace()
+    }
+    testLogging {
+        events TestLogEvent.STANDARD_OUT,
+               TestLogEvent.FAILED,
+               TestLogEvent.PASSED
+    }
+}
+
+ext {
+    scalaMajorVersion = '2.13'
+    scalaVersion = "${scalaMajorVersion}.11"
+}
+
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+
+    mavenCentral()
+}
+
+sourceSets.main.scala.srcDirs = ['src']
+sourceSets.test.scala.srcDirs = ['test']
+
+
+dependencies {
+    implementation "org.scala-lang:scala-library:${scalaVersion}"
+    compile fileTree(include: ['*.jar'], dir: 'lib')
+    testImplementation('junit:junit:4.13.2')
+    testImplementation("org.scala-lang:scala-reflect") {
+        version {
+            strictly '2.13.11'
+        }
+    }
+    testCompile('org.junit.vintage:junit-vintage-engine:5.9.0')
+    testCompile "org.scalatest:scalatest_${scalaMajorVersion}:3.0.9"
+}
+
+
+task zip(type: Zip) {
+    group = "prepareZipForSubmit"
+    description = "Zip your code for submission to Canvas"
+
+    // To make sure you can always run this task
+    outputs.upToDateWhen { false }
+    dependsOn assemble
+    from fileTree(dir: '.')
+    include 'src/warmup/**.scala'
+
+    archiveFileName = 'warmup.zip'
+    destinationDir(file("$projectDir"))
+}
+
+
+/* this prints a number between 0.0 and 1.0 to stderr
+   for use in codegrade
+ */
+task fraction(type: JavaExec, dependsOn: classes) {
+    // To make sure you can always run this task
+    outputs.upToDateWhen { false }
+    main = 'warmup.infrastructure.ReportFraction'
+    classpath sourceSets.test.runtimeClasspath
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+
+
+
