@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.FullGameTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-10-06T14:09:14" hostname="re-guest-195-169-170-97.wireless.uva.nl" time="0.102">
+  <properties/>
+  <testcase name="testGame5x9" classname="tetris.FullGameTests" time="0.008"/>
+  <testcase name="testGame8x11" classname="tetris.FullGameTests" time="0.055"/>
+  <testcase name="testGame6x10" classname="tetris.FullGameTests" time="0.011"/>
+  <testcase name="testInterleave5x9and8x11" classname="tetris.FullGameTests" time="0.012"/>
+  <testcase name="testInterleave8x11and6x10" classname="tetris.FullGameTests" time="0.014"/>
+  <system-out><![CDATA[You got 50/50 points!
+Your base grade for the tetris exercise will be : 5.50
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

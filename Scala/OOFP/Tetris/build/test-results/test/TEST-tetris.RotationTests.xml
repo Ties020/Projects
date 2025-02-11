@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.RotationTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-10-06T14:09:14" hostname="re-guest-195-169-170-97.wireless.uva.nl" time="0.018">
+  <properties/>
+  <testcase name="testIRotations" classname="tetris.RotationTests" time="0.005"/>
+  <testcase name="testJRotations" classname="tetris.RotationTests" time="0.001"/>
+  <testcase name="testLRotations" classname="tetris.RotationTests" time="0.002"/>
+  <testcase name="testORotations" classname="tetris.RotationTests" time="0.002"/>
+  <testcase name="testSRotations" classname="tetris.RotationTests" time="0.002"/>
+  <testcase name="testTRotations" classname="tetris.RotationTests" time="0.001"/>
+  <testcase name="testZRotations" classname="tetris.RotationTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

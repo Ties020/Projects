@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.BlockedTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-10-06T14:09:14" hostname="re-guest-195-169-170-97.wireless.uva.nl" time="0.015">
+  <properties/>
+  <testcase name="testMoveOutLeft" classname="tetris.BlockedTests" time="0.002"/>
+  <testcase name="testMoveOutRight" classname="tetris.BlockedTests" time="0.002"/>
+  <testcase name="testBlockedByBlocksLeft" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testBlockedByBlocksRight" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testBlockedByBlocksRotateLeft" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testBlockedByBlocksRotateRight" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testRotateLeftOutRight" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testRotateRightOutRight" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testRotateLeftOutLeft" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testRotateRightOutLeft" classname="tetris.BlockedTests" time="0.001"/>
+  <testcase name="testRotateOutBottom" classname="tetris.BlockedTests" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
